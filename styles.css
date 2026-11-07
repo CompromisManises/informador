@@ -45,6 +45,7 @@ body {
 .barra {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: .5rem;
   padding: .55rem 1.2rem;
@@ -150,8 +151,9 @@ main {
 }
 
 .rajola {
-  flex: 0 0 32%;
+  flex: 0 0 300px;
   max-width: 300px;
+  margin-left: auto;
 }
 
 .rajola img {
