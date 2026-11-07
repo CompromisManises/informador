@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Informador de Manises · APM-Compromís</title>
+<title>Compromís amb Manises · Informador</title>
 <meta name="description" content="Agent d'IA que resol dubtes sobre l'APM-Compromís de Manises i l'actualitat municipal. Multilingüe, amb veu i lletra ampliable.">
 <meta name="theme-color" content="#ff6b35">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +20,8 @@
 </head>
 <body>
 
-<header class="cap">
-  <img class="logo" src="image1.jpg" alt="Rajola ceràmica de Manises, logotip de l'Informador">
-  <div class="titols">
-    <h1>Informador de Manises</h1>
-    <p class="subtitol">APM-Compromís · Manises</p>
-    <p class="lema" id="lema"></p>
-  </div>
+<header class="cap-general">
+  <h1>COMPROMÍS AMB MANISES</h1>
 </header>
 
 <nav class="barra" aria-label="Opcions d'accessibilitat i idioma">
@@ -43,23 +38,23 @@
   <button id="instalar" class="boto or" hidden>📱 <span id="instalar-text">Instal·lar app</span></button>
 </nav>
 
-<main>
-  <section id="xat" class="xat" aria-live="polite" aria-label="Conversa amb l'Informador"></section>
+<main class="contingut">
+  <div class="dua-col">
+    <section id="xat" class="xat" aria-live="polite" aria-label="Conversa amb l'Informador"></section>
 
-  <form id="formulari" class="formulari" autocomplete="off">
-    <button type="button" id="micro" class="boto eina gran" title="Parla" aria-label="Dictar la pregunta amb veu">🎙️</button>
-    <input id="entrada" type="text" required
-           placeholder="Escriu la teua pregunta…"
-           aria-label="Escriu la teua pregunta">
-    <button type="submit" id="enviar" class="boto gran" title="Envia" aria-label="Envia la pregunta">➤</button>
-  </form>
-  <p id="estat" class="estat" role="status"></p>
+    <aside class="rajola">
+      <img src="image1.jpg" alt="Rajola ceràmica de Manises, logotip de l'Informador">
+    </aside>
+  </div>
+
+  <section class="descarrega">
+    <p id="descarrega-text">Descarrega lliurement la nostra APP</p>
+    <button id="descarrega" class="boto or gran">⬇ <span id="descarrega-boto">Descarregar</span></button>
+  </section>
 </main>
 
 <footer class="peu">
-  <img class="marca-inferior" src="image2.jpg" alt="APM-Compromís Manises · Plaça del Castell, 1 · manises@compromis.net">
   <p class="avis-email"><span id="avis-pre"></span> <a id="avis-enllac" href="mailto:manises@compromis.net"></a></p>
-  <p>APM-Compromís Manises · Observatori d'Igualtat Educativa, 2026</p>
 </footer>
 
 <script src="app.js" defer></script>
