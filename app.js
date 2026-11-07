@@ -2,7 +2,7 @@
    Informador de Manises — front-end del xat
    Endpoint del Worker de Cloudflare:
    ========================================================= */
-const ENDPOINT = "https://compromis-manises.francesc-j-hernandez.workers.dev";
+const ENDPOINT = "https://compromis-manises.francesc-j-hernandez.workers.dev/api/chat";
 
 /* ---------- Idiomes (valencià, castellà, anglès, francès, alemany, xinès, àrab) ---------- */
 const IDIOMES = {
