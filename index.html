@@ -40,7 +40,18 @@
 
 <main class="contingut">
   <div class="dua-col">
-    <section id="xat" class="xat" aria-live="polite" aria-label="Conversa amb l'Informador"></section>
+    <div class="columna-xat">
+      <section id="xat" class="xat" aria-live="polite" aria-label="Conversa amb l'Informador"></section>
+
+      <form id="formulari" class="formulari" autocomplete="off">
+        <button type="button" id="micro" class="boto eina gran" title="Parla" aria-label="Dictar la pregunta amb veu">🎙️</button>
+        <input id="entrada" type="text" required
+               placeholder="Escriu la teua pregunta…"
+               aria-label="Escriu la teua pregunta">
+        <button type="submit" id="enviar" class="boto gran" title="Envia" aria-label="Envia la pregunta">➤</button>
+      </form>
+      <p id="estat" class="estat" role="status"></p>
+    </div>
 
     <aside class="rajola">
       <img src="image1.jpg" alt="Rajola ceràmica de Manises, logotip de l'Informador">
